@@ -5,7 +5,7 @@
 #include "entities.h"
 #include "raylib.h"
 
-// todo: refactor to give reactive jump
+// todo minor: tweaks to reactive jump - slow towards the top of the jump
 // todo: refactor env items into distinct types?
 // todo: add collectibles?
 
@@ -21,6 +21,7 @@ int main(void) {
     player.position = (Vector2){ 400, 280 };
     player.speed = 0;
     player.canJump = false;
+    player.isJumping = false;
     EnvItem envItems[] = {
         {{ 0, -800, 1000, 1600 }, 0, LIGHTGRAY },
         {{ 0, 400, 1000, 200 }, 1, GRAY },

@@ -6,6 +6,8 @@ typedef struct Player {
     Vector2 position;
     float speed;
     bool canJump;
+    bool isJumping;
+    float startingJumpHeight;
 } Player;
 
 typedef struct EnvItem {
